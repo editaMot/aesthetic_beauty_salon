@@ -1,0 +1,69 @@
+@import 'base/index';
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$max-screen-width: 1440px;
+$min-screen-width: 360px;
+
+// Font sizes
+$heading-xxl: 72px;
+$heading-xl: 48px;
+$heading-lg: 42px;
+$heading-md: 38px;
+$heading-sm: 32px;
+$heading-xs: 30px;
+$heading-xxs: 24px;
+$heading-xxxs: 18px;
+
+$text-xxl: 32px;
+$text-xl: 25px;
+$text-lg: 20px;
+$text-md: 18px;
+$text-sm: 16px;
+$text-xs: 14px;
+
+// Font Weights
+$weight-regular: 400;
+$weight-bold: 700;
+
+// Breakpoints
+$xs-screen: $min-screen-width;
+$sm-screen: 600px;
+$md-screen: 768px;
+$lg-screen: 900px;
+$xl-screen: 1200px;
+$xxl-screen: $max-screen-width;
+
+// Font Families
+$logo-font: 'Tangerine', cursive;
+$text-font: 'Playfair Display', serif;
+
+:root {
+  --none: none;
+}
+
+.main {
+  font-family: $text-font;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: $max-screen-width;
+  color: $black;
+
+  @media screen and (min-width: $sm-screen) {
+    padding: 0 5rem;
+  }
+}
+
+main {
+  @media only screen and (min-width: $md-screen) {
+    min-height: calc(100vh - 36rem);
+  }
+}

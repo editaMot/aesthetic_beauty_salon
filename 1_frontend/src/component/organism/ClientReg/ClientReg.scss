@@ -1,0 +1,69 @@
+.registration-wrapper {
+  background-color: $light;
+  box-shadow: 0 0 0 100vmax $light;
+  padding: 6rem 0;
+}
+
+.registration {
+  align-items: center;
+  background-color: $white;
+  border: 0.15rem solid $light;
+  border-radius: 1rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3rem;
+  width: 100%;
+
+  @media only screen and (min-width: $md-screen) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 3rem 3rem 4rem 0;
+  }
+
+  @media only screen and (min-width: $xl-screen) {
+    max-width: 80%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media only screen and (min-width: $md-screen) {
+      max-width: 45%;
+    }
+
+    @media only screen and (min-width: $lg-screen) {
+      max-width: 40%;
+    }
+
+    @media only screen and (min-width: $xl-screen) {
+      max-width: 35%;
+    }
+
+    h2 {
+      color: $dark;
+      font-size: $heading-xxs;
+      margin-bottom: 3rem;
+      text-align: center;
+
+      @media only screen and (min-width: $lg-screen) {
+        align-self: center;
+        font-size: $heading-xs;
+        width: 80%;
+      }
+    }
+  }
+
+  &__img {
+    @media only screen and (min-width: $md-screen) {
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

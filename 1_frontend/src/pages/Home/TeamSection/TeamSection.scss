@@ -1,0 +1,28 @@
+.wrapper-team {
+  margin: 2rem 0 10rem;
+
+  .heading {
+    font-size: $heading-lg;
+    margin: 3rem;
+    text-align: center;
+
+    @media only screen and (min-width: $md-screen) {
+      font-size: $heading-xl;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    @media only screen and (min-width: $lg-screen) {
+      flex-wrap: nowrap;
+    }
+
+    @media only screen and (min-width: $xl-screen) {
+      justify-content: space-between;
+    }
+  }
+}

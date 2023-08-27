@@ -1,0 +1,29 @@
+// styles
+.team {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+
+  &__heading {
+    font-size: $heading-xxs;
+    margin-top: -2rem;
+    text-align: center;
+
+    @media only screen and (min-width: $lg-screen) {
+      font-size: $heading-xxxs;
+    }
+
+    @media only screen and (min-width: $xl-screen) {
+      font-size: $heading-xs;
+    }
+  }
+
+  &__specialty {
+    font-size: $text-sm;
+
+    @media only screen and (min-width: $lg-screen) {
+      font-size: $text-xs;
+    }
+  }
+}

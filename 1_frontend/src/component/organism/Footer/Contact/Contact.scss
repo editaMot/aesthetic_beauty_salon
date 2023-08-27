@@ -1,0 +1,34 @@
+.contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media only screen and (min-width: $md-screen) {
+    width: calc(100% / 3);
+  }
+
+  &__heading {
+    font-size: $heading-xxs;
+    margin-bottom: 2rem;
+  }
+
+  &__email {
+    color: $secondary;
+    font-size: $text-sm;
+    margin-bottom: 1rem;
+  }
+
+  &__phone {
+    font-size: $text-sm;
+    margin-bottom: 2rem;
+  }
+
+  &__location {
+    font-size: $text-xs;
+
+    @media only screen and (min-width: $lg-screen) {
+      font-size: $text-sm;
+    }
+  }
+}

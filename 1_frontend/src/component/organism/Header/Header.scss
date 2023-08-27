@@ -1,0 +1,57 @@
+.shadow {
+  background-color: $white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  background-color: $white;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  @media screen and (min-width: $sm-screen) {
+    padding: 0 5rem;
+  }
+}
+
+.header {
+  align-items: center;
+  color: $black;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $text-font;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $max-screen-width;
+  padding: 2rem 0 3rem;
+  transition: box-shadow 1s linear;
+
+  @media only screen and (min-width: $md-screen) {
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    font-family: $logo-font;
+    width: 80%;
+
+    @media only screen and (min-width: $sm-screen) {
+      width: 30%;
+    }
+
+    a {
+      font-size: $text-xxl;
+      padding: 1rem 2rem 1rem 0;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: var(--none);
+    cursor: pointer;
+
+    @media only screen and (min-width: $md-screen) {
+      display: none;
+    }
+  }
+}

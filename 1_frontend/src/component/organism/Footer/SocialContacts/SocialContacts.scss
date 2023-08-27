@@ -1,0 +1,20 @@
+.social-contacts {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media only screen and (min-width: $md-screen) {
+    width: calc(100% / 3);
+  }
+
+  &__logo {
+    align-self: center;
+    font-family: $logo-font;
+    font-size: $heading-lg;
+  }
+
+  .copyright {
+    font-size: $text-xs;
+  }
+}

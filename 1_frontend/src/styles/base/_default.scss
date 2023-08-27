@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  // scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

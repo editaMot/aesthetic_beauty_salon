@@ -1,0 +1,27 @@
+### -- get all clients
+GET http://localhost:5000/api/clients
+
+### -- get  client by id
+GET http://localhost:5000/api/clients/63162166d7a1140bd20062c0
+
+### -- -- create client
+POST http://localhost:5000/api/clients
+Content-Type: application/json
+
+{
+"name": "Tom Smith",
+"email": "john@mail.com",
+"date": "2022-09-15",
+"time": "10:30"
+}
+
+### -- update client by id
+PUT http://localhost:5000/api/clients/63162166d7a1140bd20062c0
+Content-Type: application/json
+
+{
+"name": "Alex Smith"
+}
+
+### -- delete user
+DELETE http://localhost:5000/api/clients/63162206d7a1140bd20062c4

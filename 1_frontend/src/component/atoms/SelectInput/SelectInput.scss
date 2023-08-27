@@ -1,0 +1,36 @@
+.select-input {
+  display: flex;
+  flex-direction: column;
+
+  select {
+    appearance: none;
+    background-color: #eee;
+    background-image: linear-gradient(45deg, transparent 50%, $dark 50%),
+      linear-gradient(135deg, $dark 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-repeat: no-repeat;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    border: var(--none);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: $text-font;
+    margin: 0.25rem 0;
+    margin: 0;
+    padding: 1rem 1.2rem;
+    width: 100%;
+    color: $dark;
+  }
+
+  label {
+    color: $dark-grey;
+    font-size: $text-sm;
+  }
+
+  .error {
+    color: $secondary-light;
+    font-size: $text-xs;
+    margin-top: 0.25rem;
+  }
+}

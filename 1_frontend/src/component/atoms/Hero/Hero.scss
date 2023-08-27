@@ -1,0 +1,65 @@
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-bottom: 10rem;
+
+  @media screen and (min-width: $md-screen) {
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  &__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 85%;
+
+    @media screen and (min-width: $sm-screen) {
+      width: 70%;
+    }
+
+    @media screen and (min-width: $md-screen) {
+      gap: 3rem;
+      width: 40%;
+    }
+
+    span {
+      border-bottom: 0.25rem solid $secondary-light;
+      margin-top: -1rem;
+      width: 15rem;
+    }
+
+    h1 {
+      font-size: $heading-xl;
+
+      @media screen and (min-width: $lg-screen) {
+        font-size: $heading-xxl;
+      }
+    }
+
+    p {
+      font-size: $text-md;
+
+      @media screen and (min-width: $lg-screen) {
+        font-size: $text-lg;
+      }
+    }
+  }
+
+  &__img {
+    align-self: center;
+    clip-path: circle(45% at 50% 50%);
+    width: 25rem;
+
+    @media screen and (min-width: $md-screen) {
+      clip-path: var(--none);
+      width: 50%;
+    }
+  }
+}
