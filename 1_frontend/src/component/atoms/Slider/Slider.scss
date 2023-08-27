@@ -1,0 +1,26 @@
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 12px;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  background: $secondary-light;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}

@@ -1,0 +1,30 @@
+.testimonial {
+  align-items: stretch;
+  background-color: $white;
+  border: 0.2rem solid $secondary-light;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 40rem;
+  min-height: 100%;
+  padding: 2rem;
+  text-align: center;
+
+  &__review,
+  &__procedure {
+    font-size: $text-xs;
+  }
+
+  &__quotes {
+    color: $secondary;
+    font-size: $heading-lg;
+    font-style: italic;
+    margin-bottom: -1.75rem;
+  }
+
+  &__name {
+    color: $secondary;
+    font-size: $text-sm;
+  }
+}

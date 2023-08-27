@@ -1,0 +1,40 @@
+.login-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+
+  @media only screen and (min-width: $xs-screen) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: $sm-screen) {
+    width: 30rem;
+  }
+
+  @media only screen and (min-width: $md-screen) {
+    width: 24rem;
+  }
+
+  @media only screen and (min-width: $lg-screen) {
+    width: 30rem;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}
+
+.login-error {
+  background-color: $secondary-light;
+  border-radius: 0.25rem;
+  font-size: $text-xs;
+  padding: 1rem;
+}

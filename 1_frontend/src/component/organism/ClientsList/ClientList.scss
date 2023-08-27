@@ -1,0 +1,15 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  img {
+    align-self: center;
+    width: 40rem;
+  }
+
+  h3 {
+    font-size: $heading-sm;
+    text-align: center;
+  }
+}

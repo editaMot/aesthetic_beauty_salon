@@ -1,0 +1,32 @@
+.loader-container {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 34rem);
+  justify-content: center;
+
+  .loader {
+    animation: animloader 1s linear infinite alternate;
+    border-radius: 50%;
+    color: $secondary-light;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  @keyframes animloader {
+    0% {
+      box-shadow: -38px -12px, -14px 0, 14px 0, 38px 0;
+    }
+
+    33% {
+      box-shadow: -38px 0, -14px -12px, 14px 0, 38px 0;
+    }
+
+    66% {
+      box-shadow: -38px 0, -14px 0, 14px -12px, 38px 0;
+    }
+
+    100% {
+      box-shadow: -38px 0, -14px 0, 14px 0, 38px -12px;
+    }
+  }
+}

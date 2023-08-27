@@ -1,0 +1,69 @@
+@import '../../../styles/index';
+
+.btn {
+  align-items: center;
+  align-self: center;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  color: $light;
+  display: flex;
+  font-family: $text-font;
+  font-size: $text-sm;
+  gap: 1rem;
+  padding: 1rem 3rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    @include button-bg($primary);
+
+    color: $light;
+  }
+
+  &--primary-light {
+    @include button-bg($primary-light);
+
+    color: $light;
+  }
+
+  &--secondary {
+    @include button-bg($secondary);
+
+    color: $dark;
+  }
+
+  &--secondary-light {
+    @include button-bg($secondary-light);
+
+    color: $dark;
+  }
+
+  &--disabled {
+    background-color: $grey;
+    color: $dark;
+    pointer-events: none;
+
+    &:hover {
+      background-color: $grey;
+      cursor: default;
+    }
+  }
+
+  &--without-style {
+    border: var(--none);
+    color: $dark;
+    font-size: $text-md;
+    padding: 0;
+  }
+
+  &--sm {
+    font-size: $text-xs;
+    padding: 0.75rem 2.5rem;
+  }
+
+  &--end {
+    align-self: flex-end;
+  }
+}

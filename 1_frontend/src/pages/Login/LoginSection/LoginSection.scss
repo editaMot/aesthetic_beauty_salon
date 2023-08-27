@@ -1,0 +1,93 @@
+.login-wrapper {
+  background-color: $light;
+  box-shadow: 0 0 0 100vmax $light;
+  padding: 6rem 0;
+}
+
+.login-section {
+  align-items: center;
+  background-color: $white;
+  border: 0.15rem solid $light;
+  border-radius: 1rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3rem;
+  margin: 0 auto;
+  padding: 3rem;
+  width: 100%;
+
+  @media only screen and (min-width: $sm-screen) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: $md-screen) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem;
+  }
+
+  @media only screen and (min-width: $xl-screen) {
+    gap: 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+
+    @media only screen and (min-width: $md-screen) {
+      max-width: 45%;
+    }
+
+    @media only screen and (min-width: $lg-screen) {
+      max-width: 40%;
+    }
+
+    @media only screen and (min-width: $xl-screen) {
+      max-width: 35%;
+    }
+
+    h2 {
+      align-self: center;
+      color: $dark;
+      font-size: $heading-xxs;
+      margin-bottom: 3rem;
+      text-align: center;
+      width: 100%;
+
+      @media only screen and (min-width: $xs-screen) {
+        width: 80%;
+      }
+
+      @media only screen and (min-width: $md-screen) {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: $lg-screen) {
+        align-self: center;
+        font-size: $heading-xs;
+      }
+    }
+  }
+
+  &__img {
+    margin-left: -3rem;
+    width: 80%;
+
+    @media only screen and (min-width: $md-screen) {
+      margin-left: 0;
+      width: 60%;
+    }
+
+    @media only screen and (min-width: $xl-screen) {
+      margin-left: 0;
+      max-width: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

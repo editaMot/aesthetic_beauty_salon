@@ -1,0 +1,39 @@
+.message {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: $md-screen) {
+    width: calc(100% / 3);
+  }
+
+  &__heading {
+    font-size: $heading-xxs;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__modal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (min-width: $md-screen) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    @media only screen and (min-width: $lg-screen) {
+      max-width: 60rem;
+    }
+
+    img {
+      margin-bottom: 2.8rem;
+      width: 50%;
+    }
+
+    &__form {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.prettierrc.js
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules
+node_modules/*

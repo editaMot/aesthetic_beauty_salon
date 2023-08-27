@@ -1,0 +1,35 @@
+.textarea {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+
+  label {
+    color: $dark-grey;
+    font-size: $text-sm;
+    transition: all 0.2s ease-in-out;
+
+    @media only screen and (min-width: $sm-screen) {
+      width: 15%;
+    }
+  }
+
+  .error {
+    color: $secondary-light;
+    font-size: $text-xs;
+    margin-top: 0.25rem;
+  }
+
+  textarea {
+    background-color: #eee;
+    border: var(--none);
+    border-radius: 0.5rem;
+    color: $dark;
+    display: block;
+    font-family: $text-font;
+    font-size: $text-sm;
+    outline: var(--none);
+    padding: 1rem 1.2rem;
+    resize: var(--none);
+    width: 100%;
+  }
+}

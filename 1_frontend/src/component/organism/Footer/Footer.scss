@@ -1,0 +1,30 @@
+.footer-wrapper {
+  background-color: $white;
+  bottom: 0;
+  padding: 0 2rem;
+  position: relative;
+
+  footer {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5rem;
+    margin: 0 auto;
+    max-width: $max-screen-width;
+    padding: 5rem 0;
+
+    @media only screen and (min-width: $md-screen) {
+      align-items: stretch;
+      flex-direction: row;
+      padding-bottom: 7rem;
+    }
+
+    .dash {
+      align-self: center;
+      border-bottom: 0.25rem solid $secondary-light;
+      margin-bottom: 2rem;
+      width: 8rem;
+    }
+  }
+}

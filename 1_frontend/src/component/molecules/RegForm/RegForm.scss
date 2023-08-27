@@ -1,0 +1,12 @@
+.container {
+  button {
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,19 @@
+.card {
+  align-items: center;
+  background-color: $white;
+  border: 0.3rem solid $secondary-light;
+  border-radius: 6%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 20rem;
+  justify-content: center;
+  padding: 0.7rem;
+  text-align: center;
+  width: 20rem;
+
+  &__heading {
+    font-size: $heading-xxs;
+  }
+}

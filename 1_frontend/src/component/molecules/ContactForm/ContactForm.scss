@@ -1,0 +1,16 @@
+.contact-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 25rem;
+
+  button {
+    margin-top: 1rem;
+  }
+}

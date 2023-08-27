@@ -1,0 +1,13 @@
+.success-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $text-font;
+  gap: 2rem;
+  padding: 2rem;
+
+  &__text {
+    font-size: $text-md;
+    text-align: center;
+  }
+}

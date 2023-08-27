@@ -1,0 +1,30 @@
+.testimonials-wrapper {
+  background-color: $light;
+  box-shadow: 0 0 0 100vmax $light;
+  clip-path: inset(0 -100vmax);
+}
+
+.testimonials {
+  align-items: center;
+  padding-top: 5rem;
+  text-align: center;
+
+  @media only screen and (min-width: $lg-screen) {
+    margin-bottom: 3rem;
+  }
+
+  &__heading {
+    font-size: $heading-md;
+    margin-bottom: 4rem;
+
+    @media only screen and (min-width: $md-screen) {
+      font-size: $heading-lg;
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

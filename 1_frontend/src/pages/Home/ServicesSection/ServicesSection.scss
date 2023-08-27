@@ -1,0 +1,34 @@
+.wrapper {
+  box-shadow: 0 0 0 100vmax $light;
+  clip-path: inset(0 -100vmax);
+}
+
+.services {
+  background-color: $light;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0 10rem;
+
+  &__heading {
+    font-size: $heading-md;
+    margin-bottom: 4rem;
+    text-align: center;
+
+    @media only screen and (min-width: $md-screen) {
+      font-size: $heading-xl;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    @media only screen and (min-width: $xl-screen) {
+      justify-content: space-evenly;
+    }
+  }
+}
